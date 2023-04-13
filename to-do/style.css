@@ -8,7 +8,7 @@ body {
 }
 
 ul {
-  padding: 0;
+  padding: none;
   list-style: none;
 }
 
