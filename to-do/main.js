@@ -17,4 +17,27 @@ function onAdd() {
     input.focus();
     return;
   }
+  const item = creatItem(text);
+  items.appendChild(item);
+  input.value = '';
+  input.focus();
+}
+
+function creatItem(text) {
+  const listRow = document.createElement('li');
+  listRow.setAttribute('class', 'list');
+  listRow.innerHTML = `
+  <div class="items">
+  <span>${text}</span>
+  <div class="clickContainer">
+    <button class="item__checked">
+      <i class="fa-solid fa-circle-check check "></i>
+    </button>
+    <button class="item__delete">
+      <i class="fa-solid fa-delete-left delete"> </i>
+    </button>
+  </div>
+</div>`;
+
+  return listRow;
 }

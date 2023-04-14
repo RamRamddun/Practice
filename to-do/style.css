@@ -63,7 +63,7 @@ button {
   font-size: 20px;
 }
 
-.list{
+.list {
   padding: 0 20px 0 20px;
 }
 
@@ -72,6 +72,12 @@ button {
   justify-content: space-between;
   font-size: 20px
 }
+
+.clickContainer button{
+  padding: 0;
+  margin: 5px;
+}
+
 .footer {
   font-size: 20px;
 }
