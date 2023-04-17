@@ -8,8 +8,9 @@ body {
 }
 
 ul {
-  padding: none;
   list-style: none;
+  padding: 0 25px;
+  margin: 10px 0;
 }
 
 button {
@@ -20,7 +21,7 @@ button {
 }
 
 .container {
-  width: 500px;
+  width: 550px;
   height: 800px;
   margin: auto;
   text-align: center;
@@ -61,12 +62,11 @@ button {
   height: 400px;
   background-color: white;
   font-size: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
   overflow: scroll;
 }
 
 .list {
-  padding: 0 20px 0 20px;
 }
 
 .items {
