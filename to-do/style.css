@@ -45,6 +45,7 @@ button {
   outline: none;
   line-height: 30px;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .input__btn {
