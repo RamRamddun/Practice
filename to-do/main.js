@@ -21,6 +21,7 @@ function onAdd() {
   }
   const item = creatItem(text);
   items.appendChild(item);
+  item.scrollIntoView({ block: 'center' });
   input.value = '';
   input.focus();
   total++;

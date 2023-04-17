@@ -22,7 +22,6 @@ button {
 
 .container {
   width: 550px;
-  height: 800px;
   margin: auto;
   text-align: center;
 }
@@ -76,7 +75,7 @@ button {
   padding: 3px 32px;
 }
 
-i{
+i {
   transform: scale(1.2);
 }
 
