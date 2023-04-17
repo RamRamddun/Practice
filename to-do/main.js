@@ -5,6 +5,8 @@ const input = document.querySelector('.input__textbox');
 const add = document.querySelector('.input__btn');
 const form = document.querySelector('.input__form');
 const count = document.querySelector('.list__count');
+let total = 0,
+  current = 0;
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -21,6 +23,8 @@ function onAdd() {
   items.appendChild(item);
   input.value = '';
   input.focus();
+  total++;
+  updateCount();
 }
 
 function creatItem(text) {
@@ -46,9 +50,22 @@ items.addEventListener('click', (e) => {
   if (e.target.classList.contains('check')) {
     const checked = e.target.closest('.items').querySelector('.item__main');
     checked.classList.toggle('strike');
+    if (checked.classList.contains('strike')) {
+      current++;
+    } else {
+      current--;
+    }
+    updateCount();
   }
   if (e.target.classList.contains('delete')) {
     const listDelete = e.target.closest('.list');
     listDelete.remove();
+    current--;
+    total--;
+    updateCount();
   }
 });
+
+function updateCount() {
+  count.innerText = `you done ${current} out of ${total} lists`;
+}
