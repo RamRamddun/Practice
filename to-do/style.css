@@ -58,15 +58,20 @@ button {
 
 .controlAllList {
   margin-top: 10px;
+  /* font-size: 30px; */
 }
 
 .checkAll,
-.deleteAll {
+.deleteAll,
+.check,
+.delete {
   transition: all 200ms ease-out;
 }
 
 .checkAll:hover,
-.deleteAll:hover {
+.deleteAll:hover,
+.check:hover,
+.delete:hover {
   transform: scale(1.5);
 }
 
@@ -75,7 +80,7 @@ button {
   height: 400px;
   background-color: white;
   font-size: 20px;
-  margin: 20px 0;
+  margin: 10px 0;
   overflow: scroll;
 }
 
