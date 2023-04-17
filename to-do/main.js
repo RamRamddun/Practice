@@ -47,7 +47,20 @@ function createItem(text) {
   return listRow;
 }
 
-
+allBtn.addEventListener('click', (e) => {
+  if (e.target.classList.contains('checkAll')) {
+    console.log('check');
+  }
+  if (e.target.classList.contains('deleteAll')) {
+    console.log('del');
+    const allLists = document.querySelectorAll('.list');
+    console.log(allLists);
+    allLists.forEach((lists) => lists.remove());
+    current = 0;
+    total = 0;
+    updateCount();
+  }
+});
 
 items.addEventListener('click', (e) => {
   // const id = e.target.dataset.id;
