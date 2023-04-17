@@ -81,3 +81,7 @@ button {
 .footer {
   font-size: 20px;
 }
+
+.strike{
+  text-decoration: line-through;
+}

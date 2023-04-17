@@ -28,16 +28,27 @@ function creatItem(text) {
   listRow.setAttribute('class', 'list');
   listRow.innerHTML = `
   <div class="items">
-  <span>${text}</span>
+  <span class="item__main">${text}</span>
   <div class="clickContainer">
     <button class="item__checked">
-      <i class="fa-solid fa-circle-check check "></i>
+      <i class="fa-solid fa-circle-check check"></i>
     </button>
     <button class="item__delete">
       <i class="fa-solid fa-delete-left delete"> </i>
     </button>
   </div>
 </div>`;
-
   return listRow;
 }
+
+items.addEventListener('click', (e) => {
+  const id = e.target.dataset.id;
+  if (e.target.classList.contains('check')) {
+    const checked = e.target.closest('.items').querySelector('.item__main');
+    checked.classList.toggle('strike');
+    console.log(checked);
+  }
+  if (e.target.classList.contains('delete')) {
+    console.log('del');
+  }
+});
