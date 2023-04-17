@@ -2,6 +2,7 @@
 
 const items = document.querySelector('.lists');
 const input = document.querySelector('.input__textbox');
+const allBtn = document.querySelector('.controlAllList');
 const add = document.querySelector('.input__btn');
 const form = document.querySelector('.input__form');
 const count = document.querySelector('.list__count');
@@ -19,7 +20,7 @@ function onAdd() {
     input.focus();
     return;
   }
-  const item = creatItem(text);
+  const item = createItem(text);
   items.appendChild(item);
   item.scrollIntoView({ block: 'center' });
   input.value = '';
@@ -28,7 +29,7 @@ function onAdd() {
   updateCount();
 }
 
-function creatItem(text) {
+function createItem(text) {
   const listRow = document.createElement('li');
   listRow.setAttribute('class', 'list');
   listRow.innerHTML = `
@@ -39,17 +40,18 @@ function creatItem(text) {
       <i class="fa-solid fa-circle-check check"></i>
     </button>
     <button class="item__delete">
-      <i class="fa-solid fa-delete-left delete"> </i>
+    <i class="fa-solid fa-circle-minus delete"> </i>
     </button>
   </div>
 </div>`;
   return listRow;
 }
 
+
+
 items.addEventListener('click', (e) => {
   // const id = e.target.dataset.id;
   const checked = e.target.closest('.items').querySelector('.item__main');
-  console.log(checked);
   if (e.target.classList.contains('check')) {
     checked.classList.toggle('strike');
     if (checked.classList.contains('strike')) {
@@ -71,8 +73,6 @@ items.addEventListener('click', (e) => {
 });
 
 function updateCount() {
-  count.innerText = `you done ${current} out of ${total} lists`;
-  // if (current == total) {
-  //   alert('you done it!');
-  // }
+  count.innerText = `you have done ${current} out of ${total} lists`;
+  //added fireworks effect when checked all lists
 }
