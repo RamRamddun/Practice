@@ -46,9 +46,9 @@ items.addEventListener('click', (e) => {
   if (e.target.classList.contains('check')) {
     const checked = e.target.closest('.items').querySelector('.item__main');
     checked.classList.toggle('strike');
-    console.log(checked);
   }
   if (e.target.classList.contains('delete')) {
-    console.log('del');
+    const listDelete = e.target.closest('.list');
+    listDelete.remove();
   }
 });
