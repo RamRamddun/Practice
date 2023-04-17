@@ -52,7 +52,6 @@ allBtn.addEventListener('click', (e) => {
   if (e.target.classList.contains('checkAll')) {
     allLists.forEach((lists) => {
       const checked = lists.querySelector('.item__main');
-      console.log(checked);
       if (checked.classList.contains('strike')) {
         lists.remove();
         current--;
