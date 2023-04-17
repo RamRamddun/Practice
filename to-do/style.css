@@ -61,6 +61,8 @@ button {
   height: 400px;
   background-color: white;
   font-size: 20px;
+  margin-top: 20px;
+  overflow: scroll;
 }
 
 .list {
@@ -70,10 +72,10 @@ button {
 .items {
   display: flex;
   justify-content: space-between;
-  font-size: 20px
+  font-size: 20px;
 }
 
-.clickContainer button{
+.clickContainer button {
   padding: 0;
   margin: 5px;
 }
@@ -82,6 +84,6 @@ button {
   font-size: 20px;
 }
 
-.strike{
+.strike {
   text-decoration: line-through;
 }
