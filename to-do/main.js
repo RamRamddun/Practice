@@ -48,13 +48,20 @@ function createItem(text) {
 }
 
 allBtn.addEventListener('click', (e) => {
+  const allLists = document.querySelectorAll('.list');
   if (e.target.classList.contains('checkAll')) {
-    console.log('check');
+    allLists.forEach((lists) => {
+      const checked = lists.querySelector('.item__main');
+      console.log(checked);
+      if (checked.classList.contains('strike')) {
+        lists.remove();
+        current--;
+        total--;
+        updateCount();
+      }
+    });
   }
   if (e.target.classList.contains('deleteAll')) {
-    console.log('del');
-    const allLists = document.querySelectorAll('.list');
-    console.log(allLists);
     allLists.forEach((lists) => lists.remove());
     current = 0;
     total = 0;
