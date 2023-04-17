@@ -76,6 +76,10 @@ button {
   padding: 3px 32px;
 }
 
+i{
+  transform: scale(1.2);
+}
+
 .clickContainer button {
   padding: 0;
   margin: 5px;
