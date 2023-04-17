@@ -60,7 +60,9 @@ items.addEventListener('click', (e) => {
   if (e.target.classList.contains('delete')) {
     const listDelete = e.target.closest('.list');
     listDelete.remove();
-    current--;
+    if (current > 0) {
+      current--;
+    }
     total--;
     updateCount();
   }
