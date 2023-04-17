@@ -47,9 +47,10 @@ function creatItem(text) {
 }
 
 items.addEventListener('click', (e) => {
-  const id = e.target.dataset.id;
+  // const id = e.target.dataset.id;
+  const checked = e.target.closest('.items').querySelector('.item__main');
+  console.log(checked);
   if (e.target.classList.contains('check')) {
-    const checked = e.target.closest('.items').querySelector('.item__main');
     checked.classList.toggle('strike');
     if (checked.classList.contains('strike')) {
       current++;
@@ -61,7 +62,7 @@ items.addEventListener('click', (e) => {
   if (e.target.classList.contains('delete')) {
     const listDelete = e.target.closest('.list');
     listDelete.remove();
-    if (current > 0) {
+    if (current > 0 && checked.classList.contains('strike')) {
       current--;
     }
     total--;
@@ -71,4 +72,7 @@ items.addEventListener('click', (e) => {
 
 function updateCount() {
   count.innerText = `you done ${current} out of ${total} lists`;
+  // if (current == total) {
+  //   alert('you done it!');
+  // }
 }
