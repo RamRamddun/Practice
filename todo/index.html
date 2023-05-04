@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do</title>
+    <meta name="description" content="to-do" />
+    <meta name="author" content="aram" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./imgs/favicon.png" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/46d2096956.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>JUST DO IT!!!</h1>
+      </div>
+      <div class="input__container">
+        <form class="input__form">
+          <input type="text" class="input__textbox" />
+          <button class="input__btn">yes!</button>
+        </form>
+        <div class="controlAllList">
+          <button>
+            <i class="fa-regular fa-thumbs-up checkAll"></i><br />remove clicked
+          </button>
+          <button>
+            <i class="fa-solid fa-hammer deleteAll"></i><br />removeAll
+          </button>
+        </div>
+      </div>
+      <div class="main">
+        <ul class="lists"></ul>
+      </div>
+      <div class="footer">
+        <span class="list__count">you done 0 out of 0 lists</span>
+      </div>
+    </div>
+  </body>
+</html>
