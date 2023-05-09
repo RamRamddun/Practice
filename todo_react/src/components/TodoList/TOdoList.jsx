@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Container() {
+export default function TodoList() {
     return (
-        <div className='container'>
+        <div>
             
         </div>
     );
