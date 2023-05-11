@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function AddList({ onAdd }) {
   const [todotext, setTodotext] = useState('');
@@ -9,7 +10,7 @@ export default function AddList({ onAdd }) {
       setTodotext('');
       return;
     }
-    const list = { id: '125', text: todotext, status: 'active' };
+    const list = { id: uuidv4(), text: todotext, status: 'active' };
     onAdd(list);
     setTodotext('');
   };
@@ -17,7 +18,7 @@ export default function AddList({ onAdd }) {
     <form onSubmit={handleSubmit}>
       <input
         type='text'
-        placeholder='inject do it'
+        placeholder='dooooo iitt'
         value={todotext}
         onChange={handleChange}
       ></input>
