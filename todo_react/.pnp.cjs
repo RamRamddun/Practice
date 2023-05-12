@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-react-app", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:7.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:18.2.0"],\
+            ["react-icons", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:4.8.0"],\
             ["react-scripts", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:5.0.1"],\
             ["uuid", "npm:9.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
@@ -14634,6 +14635,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-icons", [\
+        ["npm:4.8.0", {\
+          "packageLocation": "./.yarn/cache/react-icons-npm-4.8.0-aa5423cd6c-4dbba7ad98.zip/node_modules/react-icons/",\
+          "packageDependencies": [\
+            ["react-icons", "npm:4.8.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:4.8.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-icons-virtual-6793ebd04e/0/cache/react-icons-npm-4.8.0-aa5423cd6c-4dbba7ad98.zip/node_modules/react-icons/",\
+          "packageDependencies": [\
+            ["react-icons", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:4.8.0"],\
+            ["@types/react", null],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-is", [\
         ["npm:16.13.1", {\
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
@@ -16326,6 +16349,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-react-app", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:7.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:18.2.0"],\
+            ["react-icons", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:4.8.0"],\
             ["react-scripts", "virtual:5e6e596234a8e59132cc3993f498dba5b466f8ec5e336f8282179de620f3b8b50400147a72835de3c08640f633e9902b10dc21459c82323537707bf997182b3f#npm:5.0.1"],\
             ["uuid", "npm:9.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
