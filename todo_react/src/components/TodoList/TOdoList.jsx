@@ -4,8 +4,8 @@ import Todo from '../Todo/Todo';
 
 export default function TodoList() {
   const [todos, setTodo] = useState([
-    { id: '123', text: 'test', status: false },
-    { id: '124', text: 'test2', status: false },
+    { id: '123', text: 'test', status: 'active' },
+    { id: '124', text: 'test2', status: 'active' },
   ]);
   const onAdd = (todo) => setTodo([...todos, todo]);
   const handleUpdate = (update) =>

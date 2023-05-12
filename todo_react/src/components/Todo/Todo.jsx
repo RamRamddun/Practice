@@ -4,7 +4,7 @@ import { FaRegSadTear } from 'react-icons/fa';
 export default function Todo({ item, onUpdate, onDelete }) {
   const { id, text, status } = item;
   const handleChange = (e) => {
-    const status = e.target.checked ? true : false;
+    const status = e.target.checked ? 'completed' : 'active';
     console.log(status);
     onUpdate({ ...item, status });
   };
@@ -14,7 +14,7 @@ export default function Todo({ item, onUpdate, onDelete }) {
       <input
         type='checkbox'
         id={id}
-        checked={status === true}
+        checked={status === 'completed'}
         onChange={handleChange}
       />
       <label htmlFor={id}>{text}</label>
