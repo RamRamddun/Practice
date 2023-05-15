@@ -5,8 +5,10 @@ import Header from './components/Header/Header';
 import TodoList from './components/TodoList/TodoList';
 
 const listFilter = ['all', 'active', 'completed'];
+const deletedFilter = ['all', 'completed'];
 function App() {
   const [filter, setFilter] = useState(listFilter[0]);
+  const [deleteFilter, setDeletedFilter] = useState([0]);
   return (
     <>
       <Header
@@ -15,7 +17,11 @@ function App() {
         onFilterChange={(filter) => setFilter(filter)}
       />
       <TodoList filter={filter} />
-      <Footer />
+      <Footer
+        deleteList={deletedFilter}
+        currentDeleteList={deleteFilter}
+        onFilterDelete={setDeletedFilter}
+      />
     </>
   );
 }
