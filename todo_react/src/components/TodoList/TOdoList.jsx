@@ -7,7 +7,7 @@ export default function TodoList({ filter }) {
     { id: '123', text: 'test', status: 'active' },
     { id: '124', text: 'test2', status: 'active' },
   ]);
-  const onAdd = (todo) => setTodo([...todos, todo]);
+  const onAdd = (todo) => {setTodo([...todos, todo])};
   const handleUpdate = (update) =>
     setTodo(todos.map((item) => (item.id === update.id ? update : item)));
   const handleDelete = (delelted) =>
