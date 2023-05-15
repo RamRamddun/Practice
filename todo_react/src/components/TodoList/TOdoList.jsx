@@ -7,23 +7,20 @@ export default function TodoList({ filter }) {
     { id: '123', text: 'test', status: 'active' },
     { id: '124', text: 'test2', status: 'active' },
   ]);
-  const onAdd = (todo) => {setTodo([...todos, todo])};
+  const onAdd = (todo) => {
+    setTodo([...todos, todo]);
+  };
   const handleUpdate = (update) =>
     setTodo(todos.map((item) => (item.id === update.id ? update : item)));
   const handleDelete = (delelted) =>
     setTodo(todos.filter((item) => item.id !== delelted.id));
 
-  const filterItems = (todos, filter) => {
-    if (filter === 'all') {
-      return todos;
-    }
-    return todos.filter((list) => list.status === filter);
-  };
+  const filterItems = getFilterdItems(todos, filter);
   return (
     <section>
       <AddList onAdd={onAdd} />
       <ul>
-        {filterItems(todos, filter).map((list) => (
+        {filterItems.map((list) => (
           <Todo
             key={list.id}
             item={list}
@@ -34,4 +31,11 @@ export default function TodoList({ filter }) {
       </ul>
     </section>
   );
+}
+
+function getFilterdItems(todos, filter) {
+  if (filter === 'all') {
+    return todos;
+  }
+  return todos.filter((list) => list.status === filter);
 }
