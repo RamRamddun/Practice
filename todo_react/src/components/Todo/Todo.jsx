@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaRegSadTear } from 'react-icons/fa';
+import styles from './Todo.module.css'
 
 export default function Todo({ item, onUpdate, onDelete }) {
   const { id, text, status } = item;
