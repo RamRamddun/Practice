@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 
 export default function Header({ list, current, onFilterChange }) {
   return (
-    <>
+    <header>
       <h1>do it</h1>
       <ul>
         {list.map((value, index) => (
@@ -12,6 +12,6 @@ export default function Header({ list, current, onFilterChange }) {
           </li>
         ))}
       </ul>
-    </>
+    </header>
   );
 }
