@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-dark);
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.title {
+}
+
+.filterList {
+  display: flex;
+}
+
+.filter {
+  font-size: 1.4rem;
+  margin: 0.2rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  color: var(--color-accent);
+  opacity: 0.7;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.filter:hover,
+.filter.selected {
+  opacity: 1;
+  transform: scale(1.1) translateY(-10%);
+}
+
+/* .filter.selected::after{
+    content: '';
+    display: block;
+    margin-top: 0.2rem;
+    border: 1px solid black;
+} */

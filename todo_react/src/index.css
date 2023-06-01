@@ -25,6 +25,7 @@ body {
   height: 60%;
   max-width: 600px;
   background-color: var(--color-bg-dark);
+  overflow: hidden;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -40,4 +41,9 @@ code {
 ul {
   list-style: none;
   padding: 0;
+}
+
+button{
+  border: none;
+  outline: none;
 }
