@@ -16,14 +16,15 @@ export default function AddList({ onAdd }) {
     setTodotext('');
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <input
+      className={styles.input}
         type='text'
         placeholder='dooooo iitt'
         value={todotext}
         onChange={handleChange}
       ></input>
-      <button>YES</button>
+      <button className={styles.button}>YES</button>
     </form>
   );
 }

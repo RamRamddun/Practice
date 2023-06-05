@@ -4,6 +4,7 @@
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #e19cb0;
+  --color-white: #FAFDF3;
 }
 
 body {
@@ -36,6 +37,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 ul {
